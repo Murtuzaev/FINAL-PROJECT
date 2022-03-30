@@ -1,0 +1,268 @@
+@import "./variable";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    font-family: Jost, sans-serif;
+    width: 100%;
+    .top-header{
+     padding-top: 30px;
+        width: 75%;
+        margin: auto;
+        .top-left{
+            margin-top: 20px;
+            ul{
+                cursor: pointer;
+                li{
+                  margin-right: 20px;
+                  border-bottom: 2px solid #181B2B;
+                  font-size: 15px;
+                  font-family: Jost, sans-serif;
+                  font-weight: 500;
+                  transition: 0.3s ease-in-out;
+                  &:hover{
+               color: #889881;
+                  }
+                }
+            }
+        }
+        .top-middle{
+            padding-left: 80px;
+            img{
+                width: 186px;
+            }
+        }
+        .top-right{
+            cursor: pointer;
+            text-align: center;
+            .top-acc-1{
+                margin-right: 20px;
+                border-right: 1px solid;
+                border-color: #D4D6E5;
+                padding-right: 30px;
+                i{
+                    font-size: 25px;
+                    margin-bottom: 5px;
+                }
+                span{
+                    font-family: Jost,sans-serif;
+                    font-weight: 500;
+                    font-size: 15px;
+                    color: #2c2f40;
+                }
+            }
+            .top-acc{
+                margin-right: 20px;
+                border-right: 1px solid;
+                border-color: #D4D6E5;
+                padding-right: 30px;
+                
+                i{
+                    font-size: 25px;
+                    margin-bottom: 5px;
+                }
+                span{
+                    font-family: Jost,sans-serif;
+                    font-weight: 500;
+                    font-size: 15px;
+                    color: #2c2f40;
+                }
+            }
+            .top-euro{
+                margin-top: 15px;
+                ul{
+                    li{
+                        position: relative;
+                        a{
+                            text-decoration: none;
+                             font-size: 13px;
+                             font-weight: 500;
+                             line-height: 15px;
+                             color: #000000;
+                             &:hover {
+                               ul{
+                                   opacity: 1;
+                                   visibility: visible;
+                              
+                               }
+                             }
+                             ul{
+                                position: absolute;
+                                opacity: 0;
+                                visibility: hidden;
+                                width: 58px;
+                                transition: 0.2s ease-in-out;
+                                margin-top: 8px;
+                                background-color: #fff;
+                                box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+                                li{
+                                    font-size: 13px;
+                                    font-weight: 400;
+                                    line-height: 30px;
+                                    transition: 0.3s ease-in-out;
+                                    &:hover{
+                                        color: #909090;
+                                    }
+                                    
+                                }
+                            }
+                             i{
+                                color: #101010;
+                                margin-left: 3px;
+                                font-size: 11px;
+                             }
+                        }
+                    
+                    }
+                }
+               
+            }
+        }
+    }
+    .bottom-header{
+        margin-top: 30px;
+        border-top: 1px solid;
+        border-color: #D4D6E5;
+      .bottom-all{
+          padding-top: 15px;
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          width: 100%;
+          .bottom-left{
+              ul{
+                  position: relative;
+                  cursor: pointer;
+                li{
+                    margin-right: 35px;
+                    line-height: 15px;
+                    color: #181B2B;
+                    font-size: 16px;
+                    font-weight: 600;
+                    transition: 0.3s ease-in-out;
+                    // &:hover{
+                    //     color: #889881;
+                    // }
+                    &.li-home{
+                        position: relative;
+                        &:hover{
+                            ul{
+                                opacity: 1;
+                                visibility: visible;
+                            }
+                        }
+                        ul{
+                            position: absolute;
+                            top: 100%;
+                            left: -25%;
+                            width: 200px;
+                            z-index: 100;
+                            background-color: #FFFFFF;
+                            margin-top: 20px;
+                            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: 0.2s ease-in-out;
+                            li{
+                                color: #404040;
+                                line-height: 55px;
+                                font-size: 15px;
+                                font-weight: 600;
+                                width: 100%;
+                                border-bottom: 1px solid #dadada;
+                                padding-left: 15px;
+                                &:hover{
+                                    color: #889881;
+                                }
+                            }
+                        }
+                      }
+                      &.li-pages{
+                        .pages{
+                            position: absolute;
+                            width: 1080px;
+                            display: flex;
+                            flex-wrap: wrap;
+                            top: 100%;
+                            left: 0;
+                            margin-top: 25px;
+                            padding-left: 30px;
+                            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+                            border-top: 2px solid $green;
+                           
+                            .pages-center{
+                                padding-left: 90px;
+                            }
+                            .pages-middle{
+                                padding-left: 140px;
+                            }
+                            .pages-right{
+                                padding-left: 80px;
+                            }
+                            ul{
+                                margin-top: 20px;
+                               
+                                li{
+                                    font-size: 15px;
+                                    font-weight: 500;
+                                    font-family: Jost, sans-serif;
+                                    line-height: 40px;
+                                    a{
+                                        color: $gray;
+                                    }
+                                    &.fashion-li{
+                                        a{
+                                            color: $black;
+                                            font-weight: bold;
+                                        }
+                                    }
+                                    .span-li{
+                                        background-color: #FF233D;
+                                    }
+                                    span{
+                                        background-color: #22CC47;
+                                        color: white;
+                                        font-weight: 600;
+                                        font-size: 11px;
+                                        padding: 4px 4px;
+                                        border-radius: 3px;
+                                    }
+                                }
+                         
+                            
+                             }
+                       
+                         }
+                       
+                   
+                     }
+                    
+                       
+                }
+              }
+          }
+          .bottom-right{
+              margin-left: 220px;
+              cursor: pointer;
+              i{
+                font-size: 16px;
+            }
+            input{
+                font-size: 16px;
+                font-weight: 400;
+                color: #3E3E3E;
+                padding-left: 5px;
+                border: none;
+                cursor: pointer;
+            }
+          }
+      }
+    }
+}
