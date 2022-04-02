@@ -6,7 +6,6 @@
 
 .footer{
     width: 100%;
-    height: 100vh;
     background-color: #F2F3F9;
     .footer-inside{
         width: 75%;
@@ -376,4 +375,35 @@
             }
         }
     }
+}
+
+
+@media (max-width: 576px){
+ 
+    .footer{
+        .footer-inside{
+            width: 84%;
+         .top-footer{
+            .all{
+                line-height: 90px;
+                .top-footer-right{
+                 margin-left: 0;
+                }
+              }
+         }
+         .bottom-footer{
+             .down-all{
+                 .down-1{
+                  width: 100%;
+                 }
+                 .down-2{
+                     width: 100%;
+                 }
+             }
+         }
+          
+        }
+    }
+
+
 }
