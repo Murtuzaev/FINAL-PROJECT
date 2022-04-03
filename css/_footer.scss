@@ -1,3 +1,5 @@
+@import "_variable";
+
 *{
     margin: 0;
     padding: 0;
@@ -31,13 +33,13 @@
                   .first-span{
                     font-weight: 400;
                     line-height: 18px;
-                    color: #2C2F40;
+                    color: $textcolor;
                     padding-left: 12px;
                     font-family: Jost, sans-serif;
                   }
                   .second-span{
                       font-family: Jost, sans-serif;
-                      color: #2C2F40;
+                      color: $textcolor;
                       font-size: 22px;
                       font-weight: 700;
                       padding-left: 15px;
@@ -57,7 +59,7 @@
                           align-items: center;
                           justify-content: center;
                           border-radius: 50%;
-                          color: #FFFFFF;
+                          color: $white;
                           background-color: #1877F2;
                           border-style: solid;
                           border-width: 1px 1px 1px 1px;
@@ -110,7 +112,7 @@
                   cursor: pointer;
                   transition: 0.3s ease-in-out;
                   &:hover{
-                      color: #769881;
+                      color: $green;
                   }
               }
               .down-1{
@@ -145,7 +147,7 @@
                     line-height: 22px;
                     font-size: 15px;
                     font-weight: 600;
-                    color: #2C2F40;
+                    color: $textcolor;
                   }
                   ul{
                       li{
@@ -167,7 +169,7 @@
                         font-size: 15px;
                         font-weight: 500;
                         line-height: 22px;
-                        color: #2C2F40;
+                        color: $textcolor;
                         font-family:  Jost, sans-serif;
                      }
                  }
@@ -181,7 +183,7 @@
                 line-height: 22px;
                 font-size: 15px;
                 font-weight: 600;
-                color: #2C2F40;
+                color: $textcolor;
               }
               ul{
                 li{
@@ -191,7 +193,7 @@
                    font-family: Jost, sans-serif;
                    span{
                     background-color: #EE4D4D;
-                    color: #FFFFFF;
+                    color: $white;
                     margin: 0px 0px 0px 10px;
                     padding: 3px 5px 3px 5px;
                     line-height: 12px;
@@ -212,7 +214,7 @@
                         line-height: 22px;
                         font-size: 15px;
                         font-weight: 600;
-                        color: #2C2F40;
+                        color: $textcolor;
                         margin-bottom: 20px; 
                      }
                  }
@@ -230,14 +232,14 @@
                 line-height: 22px;
                 font-size: 15px;
                 font-weight: 600;
-                color: #2C2F40;
+                color: $textcolor;
                 margin-bottom: 20px;
               }
               input{
                 font-size: 14px;
                 line-height: 28px;
                 color: #495057;
-                background-color: #FFFFFF;
+                background-color: $white;
                 border-radius: 0px 0px 0px 0px;
                 border-style: solid;
                 border-width: 1px 1px 1px 1px;
@@ -247,13 +249,13 @@
         
               button{
                 height: 51px;
-                background-color: #769881;
+                background-color: $green;
                 font-weight: 700;
                 width: 50px;
                 border: none;
                 margin-left: -4px;
                 i{
-                    color: white;
+                    color: $white;
                 }
                 
             }
@@ -279,18 +281,18 @@
                 .total-icon{
                     i{
                         margin: 3px 15px 0px 0px;
-                        color: white;
+                        color: $white;
                     }
                 }
                 .total-text{
                     h3{
-                        color: #FFFFFF;
+                        color: $white;
                         font-size: 20px;
                         font-weight: 500;
                         line-height: 22px;
                     }
                     p{
-                        color: #FFFFFF;
+                        color: $white;
                         font-size: 15px;
                     }
                 }
@@ -299,18 +301,18 @@
                 .location-icon{
                     i{
                         margin: 3px 15px 0px 0px;
-                        color: white; 
+                        color: $white;
                     }
                 }
                 .location-text{
                     h3{
-                        color: #FFFFFF;
+                        color: $white;
                         font-size: 20px;
                         font-weight: 500;
                         line-height: 22px;
                     }
                     p{
-                        color: #FFFFFF;
+                        color: $white;
                         font-size: 15px;
                     }
                 }
@@ -325,13 +327,15 @@
                 }
                 .chat-total{
                     h3{
-                        color: #FFFFFF;
+                        color: $white;
+
                         font-size: 20px;
                         font-weight: 500;
                         line-height: 22px;
                     }
                     p{
-                        color: #FFFFFF;
+                        color: $white;
+
                         font-size: 15px;
                     }
                 }
@@ -379,29 +383,75 @@
 
 
 @media (max-width: 576px){
- 
     .footer{
         .footer-inside{
-            width: 84%;
+            width: 100%;
          .top-footer{
             .all{
                 line-height: 90px;
+                width: 80%;
+                padding-left: 15px;
                 .top-footer-right{
-                 margin-left: 0;
+                 ul{
+                     li{
+                         margin: 0 10px 0 0;
+                     }
+                 }
                 }
               }
          }
          .bottom-footer{
+             display: block;
              .down-all{
                  .down-1{
+                  height: 300px;
                   width: 100%;
                  }
                  .down-2{
-                     width: 100%;
+                     padding: 0;
+                     margin: 0;
+                 }
+                 .down-3{
+                 }
+                 .down-4{
                  }
              }
          }
-          
+         .footer-menu{
+             height: 50vh;
+             .total-menu{
+                 padding: 0;
+                 .all-total{
+                     padding-left: 20px;
+                     margin-top: 25px;
+                     .total-left{
+                         width: 100%;
+                         margin-bottom: 20px;
+                     }
+                     .total-middle{
+                         width: 40%;
+                         padding-right: 40px;
+                         margin-bottom: 20px;
+
+                     }
+                     .total-right{
+                         width: 100%;
+                     }
+                 }
+             }
+         }
+          .faq{
+              .copyright{
+                  .copy-inside{
+                    .copy-left{
+                        padding-left: 40px;
+                    }
+                    padding-left: 120px;
+                  }
+                 
+                 
+              }
+          }
         }
     }
 

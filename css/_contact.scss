@@ -1,3 +1,6 @@
+@import "_variable";
+
+
 *{
     margin: 0;
     padding: 0;
@@ -33,7 +36,7 @@
                     cursor: pointer;
                 }
                 li{
-                    color: #ffffff;
+                    color: $white;
                     padding-left: 30px;
                 }
             }
@@ -43,7 +46,6 @@
 .contact-anket{
     width: 80%;
     margin: auto;
-    height: 111vh;
     .anket{
         margin-top: 50px;
         padding-left: 30px;
@@ -108,13 +110,13 @@
                 line-height: 40px;
                 border-style: solid;
                 border-width: 1px 1px 1px 1px;
-                border-color: #E5E5E5;
+                border-color: $gray2;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 transition: 0.3s ease-in-out;
                 &:hover{
-                    background-color: #769881;
+                    background-color: $green;
                     color: white;
                 }
               }
@@ -139,7 +141,7 @@
         .anket-answer{
           width: 100%;
           padding-top: 30px;
-          background-color: #FFFFFF;
+          background-color: $white;
           box-shadow: 0 8px 5px 0 rgba(0, 0, 0, .1); 
           .answer-text{
             margin-top: 30px;
@@ -153,99 +155,75 @@
               }
           }
           .answer-input{
-              input{
-                  color: #777777;
-                  display: block;
-                  border-style: solid;
-                  border-width: 0px 0px 1px 0px;
-                  border-color: #E5E5E5;
-                  padding: 20px 0px 23px 0px;
-                  font-family: "Rubik", Sans-serif;
-              }
+              margin-top: 30px;
+            .form-select{
+                width: 90%;
+                margin: auto;
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                color: rgb(103, 103, 103);
+                font-size: 18px;
+                .op-1{
+                    color: rgb(103, 103, 103);
+                    font-size: 18px;
+                }
+            }
           }
           .first-name{
-              border-bottom: #E5E5E5;
+              padding-left: 40px;
               input{
-                  padding: 20px 0px 23px 0px;
-                  background-color: #02010100;
+                  padding: 30px 0px 23px 0px;
                   border-width: 0px 0px 1px 0px;
                   border-style: solid;
+                  border-color: rgb(183, 183, 183);
                   font-size: 16px;
                   color: #777777;
                   font-weight: 400;
                   width: 90%;
               }
-           .surname-input{
-              margin: 20px 0 50px 0;
-               input{
-                padding: 20px 0px 23px 0px;
-                background-color: #02010100;
-                border-style: solid;
-                border-width: 0px 0px 1px 0px;
-                border-color: #E5E5E5;
-                color: #777777;
-                font-family: "Rubik", Sans-serif;
-                font-size: 16px;
-                line-height: 21px;
-                font-weight: 400;
-               }
-           }
           }
           .answer-input-3{
               margin-top: 20px;
+              padding: 0 0 0 40px;
             input{
                 color: #777777;
                 display: block;
                 border-style: solid;
                 border-width: 0px 0px 1px 0px;
-                border-color: #E5E5E5;
+                border-color: rgb(183, 183, 183);
                 padding: 20px 0px 23px 0px;
                 font-family: "Rubik", Sans-serif;
+                width: 95%;
             }
           }
           .answer-input-4{
-              padding-top: 20px;
-              .order-input{
-                  input{
-                    padding: 20px 0px 23px 0px;
-                    background-color: #02010100;
-                    border-style: solid;
+              padding-left: 40px;
+                input{
+                    padding: 30px 0px 23px 0px;
                     border-width: 0px 0px 1px 0px;
-                    border-color: #E5E5E5;
-                    color: #777777;
-                    font-family: "Rubik", Sans-serif;
-                    font-size: 16px;
-                    line-height: 21px;
-                    font-weight: 400;
-                  }
-              }
-              .phone-input{
-                  input{
-                    padding: 20px 0px 23px 0px;
-                    background-color: #02010100;
                     border-style: solid;
-                    border-width: 0px 0px 1px 0px;
-                    border-color: #E5E5E5;
-                    font-family: "Rubik", Sans-serif;
+                    border-color: rgb(183, 183, 183);
                     font-size: 16px;
                     color: #777777;
                     font-weight: 400;
-                    line-height: 21px;
-                  }
-              }
+                    width: 90%;
+                }
           }
         .answer-input-5{
+            padding-left: 40px;
             textarea{
                 font-family: "Rubik", Sans-serif;
                 font-size: 16px;
                 font-weight: 400;
                 border-style: solid;
                 border-width: 0px 0px 1px 0px;
-                border-color: #E5E5E5;
+                border-color: rgb(183, 183, 183);
                 background-color: #02010100;
                 color: #777777;
                 padding: 30px 0px 23px 0px;
                 height: 150px;
+                width: 95%;
              }
         }
          
@@ -259,7 +237,7 @@
                 font-weight: 500;
                 margin-left: 10px;
                 padding: 18px 200px;
-                background-color: #769881;
+                background-color: $green;
                 i{
                     margin-left: 10px;
                 }
@@ -271,6 +249,7 @@
 .payment-2{
     width: 75%;
     margin: auto;
+    padding-top: 80px;
     .delivery-1{
         .del-icon-1{
             i{
@@ -341,4 +320,63 @@
        }
     }
   
+}
+
+
+
+@media (max-width: 576px){
+
+.contact{
+    .contact-inside{
+        margin-top: 65px;
+        .contact-text{
+             h1{
+                 margin: 0;
+             }
+        }
+        .contact-text-2{
+            ul{
+                margin: 0;
+                li{
+                    padding-left: 0;
+                    margin: 20px 20px 0 0;
+                }
+            }
+        }
+    }
+}
+
+
+.contact-anket{
+    width: 100%;
+    .anket{
+        padding-left: 0;
+        .all-text{
+            padding-left: 20px;
+            margin-top: 25px;
+        }
+        .anket-answer{
+            .first-name{
+                input{
+                    width: 95%;
+                }
+            }
+            .answer-input-4{
+                input{
+                    width: 95%;
+                }
+            }
+            .answer-button{
+                a{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.payment-2{
+    width: 100%;
+    padding-left: 20px;
+}
 }
