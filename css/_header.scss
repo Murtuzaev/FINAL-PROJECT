@@ -196,23 +196,23 @@ a{
                             opacity: 0;
                             visibility: hidden;
                             transition: 0.2s ease-in-out;
+                            z-index: 100;
                             .layout-left{
                                 background-image: url(https://demo.themewinter.com/wp/bascart/fashion/wp-content/uploads/sites/8/2021/10/leaf-shape.png);
                                 background-position: center center;
                                 background-repeat: no-repeat;
                                 background-size: cover;
                                 ul{
-                                  
                                     li{
                                         padding: 10px 0;
                                         line-height: 40px;
+                                        width: 100%;
                                         &.lay-li{
                                             background-color: #F4F9F5;
                                             width: 100%;
                                             border-left: 3px solid $green;
                                             a{
                                                 color: $black;
-                                           
                                                 i{
                                                     color: $green;
                                                 }

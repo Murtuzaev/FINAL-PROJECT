@@ -116,7 +116,6 @@
                   }
               }
               .down-1{
-                  width: 25%;
                   height: 260px;
                   background-color: #EBEDF5;
                   padding: 40px 40px 30px 40px;
@@ -141,8 +140,8 @@
               }
               .down-2{
                   margin-top: 40px;
-                  padding-left: 90px;
-                  width: 25%;
+                  padding-left: 120px;
+                //   width: 25%;
                   h4{
                     line-height: 22px;
                     font-size: 15px;
@@ -160,7 +159,7 @@
               }
          .down-3{
              margin-top: 40px;
-             width: 25%;
+            //  width: 25%;
              .down-method{
                  margin-top: 35px;
                  .method-text{
@@ -206,7 +205,6 @@
          }
          .down-4{
              margin-top: 40px;
-             width: 25%;
              .dowload-down{
                  margin-top: 20px;
                  .dowload-text{
@@ -253,7 +251,7 @@
                 font-weight: 700;
                 width: 50px;
                 border: none;
-                margin-left: -4px;
+                margin: -4px;
                 i{
                     color: $white;
                 }
@@ -271,7 +269,7 @@
         height: 12vh;
         cursor: pointer;
         .total-menu{
-            padding: 20px 20px 18px 50px;
+            padding: 30px 20px 18px 50px;
            .all-total{
                display: flex;
                justify-content: space-between;
@@ -387,10 +385,13 @@
         .footer-inside{
             width: 100%;
          .top-footer{
+             border-bottom: 1px solid #cbcdd8;
+             padding-bottom: 50px;
+             width: 95%;
+             margin: auto;
             .all{
                 line-height: 90px;
                 width: 80%;
-                padding-left: 15px;
                 .top-footer-right{
                  ul{
                      li{
@@ -403,27 +404,53 @@
          .bottom-footer{
              display: block;
              .down-all{
+                 width: 100%;
                  .down-1{
                   height: 300px;
                   width: 100%;
                  }
                  .down-2{
-                     padding: 0;
+                     padding: 15 0 0 15px;
+                     width: 100%;
                      margin: 0;
                  }
                  .down-3{
+                     padding-left: 15px;
+                     .down-method{
+                         .logo{
+                             img{
+                                 width: 350px;
+                             }
+                         }
+                     }
                  }
                  .down-4{
+                     width: 100%;
+                     padding-left: 20px;
+                     input{
+                         width: 90%;
+                         
+                     }
+                     .dowload-down{
+                       .dowload-photo{
+                           .logo-down-1{
+                               img{
+                                   width: 230px;
+                                   margin-right: 40px;
+                               }
+                           }
+                       }
+                     }
                  }
              }
          }
          .footer-menu{
-             height: 50vh;
+             height: 40vh;
              .total-menu{
                  padding: 0;
                  .all-total{
                      padding-left: 20px;
-                     margin-top: 25px;
+                     margin-top: 30px;
                      .total-left{
                          width: 100%;
                          margin-bottom: 20px;
